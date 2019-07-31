@@ -1,13 +1,13 @@
 class Human {
    gender= 'female';
   
-  printGender=()=>{
+  printGender=()=>{  /* when using EC7 (next generation javascript we make use of arrow function*/
     console.log(this.gender);
   }
 }
-class Person extends Human{
+class Person extends Human{ //extend keyword is must for using other class objects
   constructor(){
-    super();
+    super(); //using super for inheritance is mandatory
     this.name="maxwell";
     this.gender="male";
   }
